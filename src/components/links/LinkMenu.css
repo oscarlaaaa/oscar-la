@@ -1,0 +1,14 @@
+.menu {
+  width: 90%;
+  height: auto;
+  margin: auto;
+}
+.menuicon {
+  fill: black;
+  height: 50px;
+  width: 50px;
+  margin: auto 3% auto 3%;
+}
+.menuicon:hover {
+  fill: green;
+}
