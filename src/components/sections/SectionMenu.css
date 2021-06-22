@@ -2,3 +2,12 @@
   width: 80%;
   margin: 5% auto 5% auto;
 }
+.secticon {
+  height: 50px;
+  width: auto;
+  margin: 5%;
+}
+
+.outline-secondary {
+  margin: 5%;
+}

@@ -1,14 +1,16 @@
 .menu {
   width: 90%;
   height: auto;
-  margin: auto;
+  margin: 5%;
 }
+
 .menuicon {
-  fill: black;
+  fill: grey;
   height: 50px;
   width: 50px;
   margin: auto 3% auto 3%;
 }
+
 .menuicon:hover {
-  fill: green;
+  fill: rgb(61, 205, 241);
 }
