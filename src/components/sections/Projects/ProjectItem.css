@@ -1,5 +1,4 @@
 .projectitem {
-  border: 2px solid black;
   margin: 3%;
   text-align: left;
   padding: 3%;
@@ -17,18 +16,53 @@ p {
 i {
   color: grey;
 }
+.projectinfo {
+  margin: 3%;
+}
 
 @media (max-width: 600px) {
   .projectitem {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template: 'title title' auto 'slogan slogan' auto 'vid info' 100% / 40% 60%;
+  }
+
+  .video {
+    grid-area: vid;
+  }
+
+  .projecttitle {
+    grid-area: title;
+  }
+
+  .projectslogan {
+    grid-area: slogan;
+  }
+
+  .projectinfo {
+    grid-area: info;
   }
 }
 
 
 @media (min-width: 601px) {
-  .projectlist {
-    display: flex;
-    flex-direction: column;
+  .projectitem {
+    display: grid;
+    grid-template: 'title title' auto 'slogan slogan' auto 'video info' auto / 40% auto;
+  }
+
+  .video {
+    grid-area: video;
+  }
+
+  .projecttitle {
+    grid-area: title;
+  }
+
+  .projectslogan {
+    grid-area: slogan;
+  }
+
+  .projectinfo {
+    grid-area: info;
   }
 }

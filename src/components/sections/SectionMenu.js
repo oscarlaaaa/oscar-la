@@ -6,7 +6,8 @@ import { ReactComponent as ProjectIcon } from "../../assets/img/cpu-fill.svg";
 import { ReactComponent as CourseIcon } from "../../assets/img/journal-text.svg";
 import { ReactComponent as ThankIcon } from "../../assets/img/people-fill.svg";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import ProjectList from "./Projects/ProjectList";
+import ProjectList from "./projects/ProjectList";
+import CourseList from "./courses/CourseList";
 
 const SectionMenu = () => {
   return (
@@ -44,7 +45,7 @@ const SectionMenu = () => {
             <ProjectList />
           </Route>
           <Route path="/courses">
-            <p>course</p>
+            <CourseList />
           </Route>
           <Route path="/thanks">
             <p>thank</p>

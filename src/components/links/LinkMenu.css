@@ -2,6 +2,10 @@
   width: 90%;
   height: auto;
   margin: 5%;
+  display: flex;
+  align-items: baseline;
+  margin-left: auto;
+  justify-content: center;
 }
 
 .menuicon {
@@ -13,4 +17,26 @@
 
 .menuicon:hover {
   fill: rgb(61, 205, 241);
+  display: inline;
+}
+
+.icontitle {
+  display: none;
+  width: auto;
+  text-decoration: none;
+}
+
+.menuicon:hover + .icontitle {
+  display: block;
+  color: rgb(61, 205, 241);
+}
+
+.menubutton {
+  margin: 1%;
+  width: 100px;
+  height: 100px;
+}
+
+a:hover {
+  text-decoration: none;
 }

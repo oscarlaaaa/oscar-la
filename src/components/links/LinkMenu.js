@@ -11,17 +11,21 @@ import resumefile from "../../assets/Oscar_La_Resume3.pdf";
 const SectionMenu = () => {
   return (
     <div className="menu">
-      <a href="https://github.com/oscarlaaaa" title="Github">
+      <a className="menubutton" href="https://github.com/oscarlaaaa" title="Github">
         <Github className="menuicon" />
+        <p style={{textDecoration: "none"}} className="icontitle" >Github</p>
       </a>
-      <a href="https://www.linkedin.com/in/oscar-la-bc/" title="Linkedin">
+      <a className="menubutton" href="https://www.linkedin.com/in/oscar-la-bc/" title="Linkedin">
         <Linkedin className="menuicon" />
+        <p style={{textDecoration: "none"}} className="icontitle" >Linkedin</p>
       </a>
-      <a href={resumefile} title="Resume">
+      <a className="menubutton" href={resumefile} title="Resume">
         <Resume className="menuicon" />
+        <p style={{textDecoration: "none"}} className="icontitle" >Resume</p>
       </a>
-      <a href="https://devpost.com/oscarla5747?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav" title="Devpost">
+      <a className="menubutton" href="https://devpost.com/oscarla5747?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav" title="Devpost">
         <Devpost className="menuicon" />
+        <p style={{textDecoration: "none"}} className="icontitle" >Devpost</p>
       </a>
     </div>
   );

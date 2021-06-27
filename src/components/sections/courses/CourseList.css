@@ -1,0 +1,12 @@
+table {
+  margin: auto;
+
+}
+tr td, tr th {
+  border: 1px solid lightgray;
+  padding: 10px;
+}
+
+table tr:nth-child(2n) {
+  background-color: rgb(198, 245, 252);
+}

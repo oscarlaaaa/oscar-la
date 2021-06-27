@@ -14,7 +14,7 @@ const projects = [
     title: "Zorped",
     type: "Discord Bot",
     timeframe: "2 weeks",
-    slogan: "\"how to trigger 2021 students : zorp\" - Joshua Martinez, 2021",
+    slogan: "\"how to trigger 2021 students : zorp\" - joshua martinez, 2021",
     technologies: "Java, MySQL, Discord4j",
     github: "https://github.com/oscarlaaaa/zorped-dnd",
     videourl: "dQw4w9WgXcQ",
