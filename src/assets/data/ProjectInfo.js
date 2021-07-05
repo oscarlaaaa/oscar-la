@@ -9,6 +9,9 @@ const projects = [
     github: "https://github.com/oscarlaaaa/COMP-2800-Team-BBY-30-ScoutNinja",
     videourl: "GDy6DT4wyDQ",
     team: "Harry He, Kenneth Ng, Sehwan Lee",
+    features: [
+      ""
+    ]
   },
   {
     title: "Zorped",
@@ -19,6 +22,7 @@ const projects = [
     github: "https://github.com/oscarlaaaa/zorped-dnd",
     videourl: "dQw4w9WgXcQ",
     team: "Harry He",
+    
   },
   {
     title: "Badminton Information System",

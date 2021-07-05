@@ -19,7 +19,7 @@ const SectionMenu = () => {
         <Linkedin className="menuicon" />
         <p style={{textDecoration: "none"}} className="icontitle" >Linkedin</p>
       </a>
-      <a className="menubutton" href={resumefile} title="Resume">
+      <a className="menubutton" href="https://drive.google.com/file/d/1ppsJMrUkFfVhpcWPBmhR-0a_jbhxNrCJ/view?usp=sharing" title="Resume">
         <Resume className="menuicon" />
         <p style={{textDecoration: "none"}} className="icontitle" >Resume</p>
       </a>

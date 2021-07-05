@@ -11,19 +11,19 @@ const ProjectItem = ({ project }) => {
       </p>
       <YoutubeEmbed className="video" embedId={project.videourl} />
       <div className="projectinfo">
-        <p>
+        <p style={{marginBottom: "0"}}>
           <span>Type:</span> {project.type}
         </p>
-        <p>
+        <p style={{marginBottom: "0"}}>
           <span>Timeframe:</span> {project.timeframe}
         </p>
-        <p>
+        <p style={{marginBottom: "0"}}>
           <span>Tech:</span> {project.technologies}
         </p>
-        <p>
+        <p style={{marginBottom: "0"}}>
           <span>Team Members:</span> {project.team}
         </p>
-        <p>
+        <p style={{marginBottom: "0"}}>
           <span>Features:</span>
         </p>
       </div>
