@@ -6,8 +6,6 @@ import { ReactComponent as Linkedin } from "../../assets/img/linkedin.svg";
 import { ReactComponent as Resume } from "../../assets/img/resume.svg";
 import { ReactComponent as Devpost } from "../../assets/img/trophy-fill.svg";
 
-import resumefile from "../../assets/Oscar_La_Resume3.pdf";
-
 const SectionMenu = () => {
   return (
     <div className="menu">

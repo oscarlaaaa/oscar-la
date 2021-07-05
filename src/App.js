@@ -15,6 +15,7 @@ const App = () => {
       <img
         style={{ height: "200px", width: "auto" }}
         src={me}
+        alt="the mastermind himself"
       ></img>
       <SectionMenu />
     </div>

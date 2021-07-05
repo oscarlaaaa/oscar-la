@@ -7,7 +7,7 @@ const ProjectList = () => {
   return (
     <div>
       {ProjectInfo.map((project) => {
-        return <><hr /><ProjectItem project={project} key={key++} /></>
+        return <div key={key++}><hr /><ProjectItem project={project} /></div>
       })}
     </div>
   )
