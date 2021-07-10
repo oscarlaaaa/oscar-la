@@ -1,11 +1,21 @@
 .sectmenu {
-  width: 80%;
+  width: 95%;
   margin: 5% auto 5% auto;
 }
 .secticon {
   height: 50px;
   width: auto;
   margin: 5%;
+}
+.sectbutt {
+    color: rgb(61, 133, 241) !important;
+    border-color: rgb(61, 133, 241) !important;
+}
+
+.sectbutt:hover {
+    color: rgb(255, 255, 255) !important;
+    border-color: rgb(255, 255, 255) !important;
+    background-color: rgb(61, 133, 241) !important;
 }
 
 .outline-secondary {

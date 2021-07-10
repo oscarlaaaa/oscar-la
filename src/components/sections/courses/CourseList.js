@@ -14,6 +14,8 @@ const CourseList = () => {
           Online that I find have helped me become a better developer. 
         </p>
       </div>
+      
+      <hr/>
 
       <table>
         <tr>

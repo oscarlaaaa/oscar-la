@@ -1,7 +1,6 @@
 .projectitem {
   margin: 3%;
   text-align: left;
-  padding: 3%;
 }
 
 span {
@@ -20,49 +19,84 @@ i {
   margin: 3%;
 }
 
+
+.video {
+  grid-area: vid;
+}
+
+.projecttitle {
+  grid-area: title;
+  font-size: 48pt;
+}
+
+.projectslogan {
+  grid-area: slogan;
+}
+
+.projectinfo {
+  grid-area: info;
+}
+
+.projectimgs {
+  grid-area: pics;
+  margin: 2%;
+  margin-top: 20px;
+}
+
+.mainimg {
+    width: 100%;
+    height: auto;
+}
+
+.projimg {
+    height: 200px;
+    width: 200px;
+    transition: height 0.5s;
+    overflow: hidden;
+    margin: 1%;
+}
+
+.projimg:hover {
+    height: 210px;
+    width: 210px;
+    border: 4px solid rgb(201, 236, 252);
+}
+
+.projectlink {
+    height: 40px;
+    width: 40px;
+    fill: rgb(0, 0, 0);
+    margin-left: 10px;
+}
+
+.projectlink:hover {
+    fill: rgb(61, 133, 241);
+    margin-left: 10px;
+}
+
 @media (max-width: 900px) {
   .projectitem {
     display: grid;
-    grid-template: 'title' auto 'slogan' auto 'vid' auto 'info' auto / 100%;
+    grid-template: "title" auto "slogan" auto "vid" auto "info" auto "pics" auto / 100%;
   }
 
-  .video {
-    grid-area: vid;
-  }
-
-  .projecttitle {
-    grid-area: title;
-  }
-
-  .projectslogan {
-    grid-area: slogan;
-  }
-
-  .projectinfo {
-    grid-area: info;
+  .projectimgs {
+    display: flex;
+    height: auto;
+    justify-content: left;
+    flex-wrap: wrap;
   }
 }
-
 
 @media (min-width: 901px) {
   .projectitem {
     display: grid;
-    grid-template: 'title title' auto 'slogan slogan' auto 'video info' auto / 40% auto;
+    grid-template: "title title" auto "slogan slogan" 10% "vid info" auto "pics info" auto / 60% auto;
   }
 
-  .video {
-    grid-area: video;
-  }
-
-  .projecttitle {
-    grid-area: title;
-  }
-
-  .projectslogan {
-    grid-area: slogan;
-  }
-
-  .projectinfo {
-    grid-area: info;
+  .projectimgs {
+    display: flex;
+    height: auto;
+    justify-content: left;
   }
 }

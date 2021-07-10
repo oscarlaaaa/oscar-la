@@ -16,7 +16,7 @@
 }
 
 .menuicon:hover {
-  fill: rgb(61, 205, 241);
+  fill: rgb(61, 133, 241);
   display: inline;
 }
 
@@ -28,7 +28,7 @@
 
 .menuicon:hover + .icontitle {
   display: block;
-  color: rgb(61, 205, 241);
+  color: rgb(61, 133, 241);
 }
 
 .menubutton {
