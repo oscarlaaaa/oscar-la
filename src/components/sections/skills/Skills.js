@@ -50,7 +50,7 @@ const Skills = () => {
         <h1>Languages, Frameworks, and Systems I've Used.</h1>
         <p>
           Here is a list of various technologies I've used throughout my
-          developer career.
+          developer career, grouped by my comfort level with them.
         </p>
         <p style={{ display: "inline-block", marginRight: "10px" }}>
           Sort By:{" "}

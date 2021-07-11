@@ -102,6 +102,9 @@ const ProjectItem = ({ project }) => {
         <p style={{ marginBottom: "0" }}>
           <span>Tech:</span> {project.technologies}
         </p>
+        <p style={{ fontSize: "1.2rem", margin: "20px" }}>
+            {project.description}
+        </p>
         <p style={{ marginBottom: "0" }}>
           <span>Features:</span>
           <ul>{projectFeatures(project.features)}</ul>
