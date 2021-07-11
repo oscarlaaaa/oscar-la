@@ -1,0 +1,24 @@
+.skillsect {
+    width: auto;
+    margin: 3%;
+    padding: 1%;
+    text-align: left;
+}
+
+/* #skilldisplay {
+    display: flex;
+    justify-content: space-around;
+} */
+
+#veryComfy {
+    border: 2px solid rgb(12, 104, 243);
+}
+#comfy {
+    border: 2px solid rgb(71, 186, 252);
+}
+#learning {
+    border: 2px solid rgb(106, 255, 248);
+}
+.sortButt:hover {
+    color: white !important;
+}

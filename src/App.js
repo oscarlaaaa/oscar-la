@@ -10,13 +10,13 @@ const App = () => {
   return (
     <div className="App">
       <Alert variant="info">This page is under construction!</Alert>
-      <Intro />
-      <LinkMenu />
       <img
         style={{ height: "200px", width: "auto" }}
         src={me}
         alt="the mastermind himself"
       ></img>
+      <Intro />
+      <LinkMenu />
       <SectionMenu />
     </div>
   );

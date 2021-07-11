@@ -2,6 +2,7 @@ import React from "react";
 import { Button, Card } from "react-bootstrap";
 import "./SectionMenu.css";
 import { ReactComponent as AboutIcon } from "../../assets/img/person-circle.svg";
+import { ReactComponent as SkillIcon } from "../../assets/img/bar-chart-line-fill.svg";
 import { ReactComponent as ProjectIcon } from "../../assets/img/cpu-fill.svg";
 import { ReactComponent as CourseIcon } from "../../assets/img/journal-text.svg";
 import { ReactComponent as ThankIcon } from "../../assets/img/people-fill.svg";
@@ -10,6 +11,7 @@ import ProjectList from "./projects/ProjectList";
 import CourseList from "./courses/CourseList";
 import Thanks from "./thanks/Thanks";
 import AboutMe from "./aboutme/AboutMe";
+import Skills from "./skills/Skills";
 
 const SectionMenu = () => {
   return (
@@ -23,6 +25,16 @@ const SectionMenu = () => {
           >
             <AboutIcon className="secticon" />
             <p>about me</p>
+          </Button>
+        </Link>
+        <Link to="/skills">
+          <Button
+            className="sectbutt"
+            style={{ margin: "1%" }}
+            variant="outline-info"
+          >
+            <SkillIcon className="secticon" />
+            <p>skills</p>
           </Button>
         </Link>
         <Link to="/projects">
@@ -58,6 +70,9 @@ const SectionMenu = () => {
         <Switch>
           <Route path="/aboutme">
             <AboutMe />
+          </Route>
+          <Route path="/skills">
+            <Skills />
           </Route>
           <Route path="/projects">
             <ProjectList />
