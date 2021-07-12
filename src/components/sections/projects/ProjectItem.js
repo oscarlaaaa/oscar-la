@@ -4,10 +4,17 @@ import "./ProjectItem.css";
 import { Modal } from "react-bootstrap";
 import { ReactComponent as Github } from "../../../assets/img/github.svg";
 import { ReactComponent as Globe } from "../../../assets/img/globe.svg";
+import { ReactComponent as Devpost } from "../../../assets/img/trophy-fill.svg";
 
 const projectFeatures = (feets) => {
   return feets.map((feat) => {
-    return <li style={{ fontSize: "1.2rem" }}>{feat}</li>;
+    return <li style={{ fontSize: "1.4rem" }}>{feat}</li>;
+  });
+};
+
+const projectAwards = (awards) => {
+  return awards.map((award) => {
+    return <li>{award}</li>;
   });
 };
 
@@ -58,13 +65,18 @@ const ProjectItem = ({ project }) => {
             <Globe className="projectlink" />
           </a>
         )}
+        {project.devpost && (
+          <a href={project.devpost}>
+            <Devpost className="projectlink" />
+          </a>
+        )}
       </h1>
 
       <p className="projectslogan">
         <i>{project.slogan}</i>
       </p>
       {project.videourl === null ? (
-        <img className="video mainimg" src={project.mainimg} />
+        <img className="video mainimg" src={project.mainimg} alt="main project visual"/>
       ) : (
         <YoutubeEmbed className="video" embedId={project.videourl} />
       )}
@@ -82,13 +94,22 @@ const ProjectItem = ({ project }) => {
         centered
       >
         <Modal.Header closeButton>
-          <Modal.Title id="modal-styling-title">
-            {modalTitle}
-          </Modal.Title>
+          <Modal.Title id="modal-styling-title">{modalTitle}</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <div style={{display: "flex", justifyContent: "center"}}>
-          <img src={modalImg} alt="hello" style={{ width: "auto", height: "auto", maxHeight: "75vh", marginLeft: "auto", marginRight: "auto" }} />
+          <div style={{ display: "flex", justifyContent: "center" }}>
+            <img
+              src={modalImg}
+              alt="hello"
+              style={{
+                width: "auto",
+                maxWidth: "90%",
+                height: "auto",
+                maxHeight: "90%",
+                marginLeft: "auto",
+                marginRight: "auto",
+              }}
+            />
           </div>
         </Modal.Body>
       </Modal>
@@ -102,8 +123,9 @@ const ProjectItem = ({ project }) => {
         <p style={{ marginBottom: "0" }}>
           <span>Tech:</span> {project.technologies}
         </p>
-        <p style={{ fontSize: "1.2rem", margin: "20px" }}>
-            {project.description}
+        {project.awards && <p><span>Awards: </span><ul>{projectAwards(project.awards)}</ul></p>}
+        <p style={{ fontSize: "1.4rem", margin: "20px" }}>
+          {project.description}
         </p>
         <p style={{ marginBottom: "0" }}>
           <span>Features:</span>

@@ -4,9 +4,11 @@ const projects = [
     type: "Game",
     categories: ["game"],
     timeframe: "3 days",
+    awards: ["Top 10 Project - AtlasHacks2 2021"],
     slogan:
       "\"can't find a job? just use the shotgun method!\" - someone who didn't mean to be taken literally",
     technologies: "Unity, C#",
+    devpost: "https://devpost.com/software/placeholder-g1ncqu",
     github: "https://github.com/oscarlaaaa/shotgun-resume",
     videourl: "vW42zt5WsRo",
     images: [
@@ -34,7 +36,7 @@ const projects = [
   {
     title: "ScoutNinja",
     type: "Mobile Web Application/Game",
-    categories: ["web", "game", "full-stack"],
+    categories: ["web", "game", "full-stack", "mobile"],
     timeframe: "6 weeks",
     slogan: "why go outside when you can go outside, inside?",
     technologies:
@@ -68,7 +70,7 @@ const projects = [
   {
     title: "Badminton Information System",
     type: "Web Application",
-    categories: ["web", "mobile", "full-stack"],
+    categories: ["web", "full-stack", "enterprise"],
     timeframe: "Current (5 months)",
     slogan:
       "this combines the two things i love: badminton, and not having to read bad handwriting.",

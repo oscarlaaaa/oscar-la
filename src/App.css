@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300;400;500;600;700;800;900&display=swap');
+
 .App {
   text-align: center;
   background-color: rgb(201, 236, 252);
   height: auto;
   padding-bottom: 5%;
+  font-family: 'Darker Grotesque', sans-serif;
+  font-weight: 500;
 }

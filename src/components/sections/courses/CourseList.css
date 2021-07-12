@@ -5,6 +5,11 @@ table {
 tr td, tr th {
   border: 1px solid lightgray;
   padding: 10px;
+  font-size: 16pt;
+}
+
+tr th {
+    font-weight: bolder;
 }
 
 table tr:nth-child(2n) {

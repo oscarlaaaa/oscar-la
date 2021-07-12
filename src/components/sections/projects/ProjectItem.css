@@ -4,12 +4,12 @@
 }
 
 span {
-  font-size: 1.5rem;
+  font-size: 1.9rem;
   font-weight: bolder;
 }
 
 p {
-  font-size: 1.3rem;
+  font-size: 1.7rem;
 }
 
 i {
@@ -26,7 +26,7 @@ i {
 
 .projecttitle {
   grid-area: title;
-  font-size: 48pt;
+  font-size: 60pt;
 }
 
 .projectslogan {
@@ -91,7 +91,7 @@ i {
 @media (min-width: 901px) {
   .projectitem {
     display: grid;
-    grid-template: "title title" auto "slogan slogan" 10% "vid info" auto "pics info" auto / 60% auto;
+    grid-template: "title title" auto "slogan slogan" auto "vid info" auto "pics info" auto / 60% auto;
   }
 
   .projectimgs {
