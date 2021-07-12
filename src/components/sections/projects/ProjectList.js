@@ -72,6 +72,13 @@ const ProjectList = () => {
         >
           Enterprise
         </Button>
+        <Button
+          variant="outline-info"
+          className="sortButt"
+          onClick={() => setSort("misc")}
+        >
+          Other
+        </Button>
       </div>
       {list.map((project) => {
         return (

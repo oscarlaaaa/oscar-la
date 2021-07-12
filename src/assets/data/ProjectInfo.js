@@ -69,7 +69,7 @@ const projects = [
   },
   {
     title: "Badminton Information System",
-    type: "Web Application",
+    type: "Web Application/Enterprise",
     categories: ["web", "full-stack", "enterprise"],
     timeframe: "Current (5 months)",
     slogan:

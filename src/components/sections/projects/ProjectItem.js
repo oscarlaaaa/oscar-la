@@ -75,6 +75,7 @@ const ProjectItem = ({ project }) => {
       <p className="projectslogan">
         <i>{project.slogan}</i>
       </p>
+      <div className="projectvisuals">
       {project.videourl === null ? (
         <img className="video mainimg" src={project.mainimg} alt="main project visual"/>
       ) : (
@@ -85,6 +86,7 @@ const ProjectItem = ({ project }) => {
       ) : (
         <div className="projectimgs">{projectPic(project)}</div>
       )}
+      </div>
       <Modal
         show={showModal}
         size="xl"
