@@ -1,12 +1,17 @@
 .skillicon {
-    height: 75px;
+    height: auto;
     width: 75px;
+    margin: auto;
+}
+
+.skilliconbox {
+    height: 80px;
     margin: 4%;
 }
 
 .skillcard {
     width: 100px;
-    height: auto; 
+    height: auto;
     margin: 10px;
     text-align: center;
     font-size: 14pt;

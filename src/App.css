@@ -8,3 +8,51 @@
   font-family: 'Darker Grotesque', sans-serif;
   font-weight: 500;
 }
+
+#introlinks {
+    width: 55%;
+    float: right; 
+    height: 50vh;
+}
+
+#myphotos {
+    width: 30%;
+    float: left;
+    margin-left: 10%;
+    height: 50vh;
+}
+
+#homepagesect {
+    margin: 5%;
+    height: 45vh;
+}
+
+#me {
+    height: auto;
+    width: 70%;
+    min-width: 300px;
+    margin: 5%;
+    border: 10px solid white;
+}
+
+@media (max-width: 1080px) {
+    #myphotos {
+        float: none;
+        margin: auto;
+        width: 80%;
+        height: auto;
+    }
+    #me {
+        max-width: 300px;
+        min-width: 100px;
+    }
+    #introlinks {
+        float: none;
+        margin: auto;
+        width: 90%;
+        height: auto;
+    }
+    #homepagesect {
+        height: auto;
+    }
+}

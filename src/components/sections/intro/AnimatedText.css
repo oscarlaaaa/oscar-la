@@ -1,0 +1,25 @@
+.descriptors {
+    display: inline-block;
+}
+
+#textbox {
+    background-color: white;
+    border: 2px solid lightgrey;
+    width: 70%;
+    height: 50px;
+}
+
+#descriptionsect {
+    height: 90px;
+}
+
+@media (max-width: 1080px) {
+    #textbox {
+        width: 100%;
+        height: 50px;
+        margin-bottom: 5%;
+    }
+    #descriptionsect {
+        height: auto;
+    }
+}

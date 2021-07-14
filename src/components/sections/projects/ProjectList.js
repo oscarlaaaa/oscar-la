@@ -25,8 +25,12 @@ const ProjectList = () => {
 
   let key = 0;
   return (
-    <div>
+    <div style={{
+        padding: "3%",
+      }}>
       <div>
+        <h1>Projects</h1>
+        <p>Here is a compilation of the projects I have completed, whether it be academic, personal, or work!</p>
         <p style={{ display: "inline-block", marginRight: "10px" }}>
           Sort By:{" "}
         </p>

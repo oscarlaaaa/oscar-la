@@ -1,6 +1,6 @@
 const projects = [
   {
-    title: "Realistic Job Hunt Simulator",
+    title: "Job Hunt Simulator",
     type: "Game",
     categories: ["game"],
     timeframe: "3 days",

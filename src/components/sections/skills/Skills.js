@@ -45,7 +45,9 @@ const Skills = () => {
   }, [sort]);
 
   return (
-    <div>
+    <div style={{
+        padding: "3%",
+      }}>
       <div>
         <h1>Languages, Frameworks, and Systems I've Used.</h1>
         <p>

@@ -22,7 +22,7 @@ i {
 
 .projecttitle {
   grid-area: title;
-  font-size: 60pt;
+  font-size: 54pt;
 }
 
 .projectslogan {
@@ -70,21 +70,39 @@ i {
   margin-left: 10px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1080px) {
   .projectitem {
     display: grid;
     grid-template: "title" auto "slogan" auto "visual" auto "info" auto / 100%;
   }
-
+  .projecttitle {
+    font-size: 38pt;
+  }
   .projectimgs {
     display: flex;
     height: auto;
     justify-content: left;
     flex-wrap: wrap;
   }
+  .projimg {
+    height: 100px;
+    width: 100px;
+  }
+  .projimg:hover {
+    height: 110px;
+    width: 110px;
+  }
+  span {
+    font-size: 1.5rem;
+    font-weight: bolder;
+  }
+  
+  p {
+    font-size: 1.3rem;
+  }
 }
 
-@media (min-width: 901px) {
+@media (min-width: 1081px) {
   .projectitem {
     display: grid;
     grid-template: "title title" auto "slogan slogan" auto "visual info" auto "visual info" auto / 60% auto;

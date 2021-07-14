@@ -13,6 +13,7 @@
     border-color: rgb(61, 133, 241) !important;
     width: 18%;
     min-width: 175px;
+    font-size: 28pt;
 }
 
 @media (max-width: 500px) {

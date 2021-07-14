@@ -6,86 +6,98 @@ import { ReactComponent as SkillIcon } from "../../assets/img/bar-chart-line-fil
 import { ReactComponent as ProjectIcon } from "../../assets/img/cpu-fill.svg";
 import { ReactComponent as CourseIcon } from "../../assets/img/journal-text.svg";
 import { ReactComponent as ThankIcon } from "../../assets/img/people-fill.svg";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { Switch, Route, Link, useLocation } from "react-router-dom";
 import ProjectList from "./projects/ProjectList";
 import CourseList from "./courses/CourseList";
 import Thanks from "./thanks/Thanks";
 import AboutMe from "./aboutme/AboutMe";
 import Skills from "./skills/Skills";
+import { useTransition, animated, config } from "@react-spring/web";
 
 const SectionMenu = () => {
+  const location = useLocation();
+
+  const transitions = useTransition(location, {
+    from: { opacity: 0, display: "none", height: 0, width: 0 },
+    enter: { opacity: 1, display: "block", height: "auto", width: "auto" },
+    leave: { opacity: 0, display: "none", height: 0 },
+    config: config.molasses,
+  });
+
   return (
-    <Router>
-      <Card body className="sectmenu">
-        <Link to="/aboutme">
-          <Button
-            className="sectbutt"
-            style={{ margin: "1%" }}
-            variant="outline-info"
-          >
-            <AboutIcon className="secticon" />
-            <p>about me</p>
-          </Button>
-        </Link>
-        <Link to="/skills">
-          <Button
-            className="sectbutt"
-            style={{ margin: "1%" }}
-            variant="outline-info"
-          >
-            <SkillIcon className="secticon" />
-            <p>skills</p>
-          </Button>
-        </Link>
-        <Link to="/projects">
-          <Button
-            className="sectbutt"
-            style={{ margin: "1%" }}
-            variant="outline-info"
-          >
-            <ProjectIcon className="secticon" />
-            <p>projects</p>
-          </Button>
-        </Link>
-        <Link to="/courses">
-          <Button
-            className="sectbutt"
-            style={{ margin: "1%" }}
-            variant="outline-info"
-          >
-            <CourseIcon className="secticon" />
-            <p>courses</p>
-          </Button>
-        </Link>
-        <Link to="/thanks">
-          <Button
-            className="sectbutt"
-            style={{ margin: "1%" }}
-            variant="outline-info"
-          >
-            <ThankIcon className="secticon" />
-            <p>special thanks</p>
-          </Button>
-        </Link>
-        <Switch>
-          <Route path="/aboutme">
-            <AboutMe />
-          </Route>
-          <Route path="/skills">
-            <Skills />
-          </Route>
-          <Route path="/projects">
-            <ProjectList />
-          </Route>
-          <Route path="/courses">
-            <CourseList />
-          </Route>
-          <Route path="/thanks">
-            <Thanks />
-          </Route>
-        </Switch>
-      </Card>
-    </Router>
+    <Card body className="sectmenu">
+      <Link to="/aboutme">
+        <Button
+          className="sectbutt"
+          style={{ margin: "1%" }}
+          variant="outline-info"
+        >
+          <AboutIcon className="secticon" />
+          <p>about me</p>
+        </Button>
+      </Link>
+      <Link to="/skills">
+        <Button
+          className="sectbutt"
+          style={{ margin: "1%" }}
+          variant="outline-info"
+        >
+          <SkillIcon className="secticon" />
+          <p>skills</p>
+        </Button>
+      </Link>
+      <Link to="/projects">
+        <Button
+          className="sectbutt"
+          style={{ margin: "1%" }}
+          variant="outline-info"
+        >
+          <ProjectIcon className="secticon" />
+          <p>projects</p>
+        </Button>
+      </Link>
+      <Link to="/courses">
+        <Button
+          className="sectbutt"
+          style={{ margin: "1%" }}
+          variant="outline-info"
+        >
+          <CourseIcon className="secticon" />
+          <p>courses</p>
+        </Button>
+      </Link>
+      <Link to="/thanks">
+        <Button
+          className="sectbutt"
+          style={{ margin: "1%" }}
+          variant="outline-info"
+        >
+          <ThankIcon className="secticon" />
+          <p>special thanks</p>
+        </Button>
+      </Link>
+      {transitions((props, item) => (
+        <animated.div style={props}>
+          <Switch location={item}>
+            <Route path="/aboutme">
+              <AboutMe />
+            </Route>
+            <Route path="/skills">
+              <Skills />
+            </Route>
+            <Route path="/projects">
+              <ProjectList />
+            </Route>
+            <Route path="/courses">
+              <CourseList />
+            </Route>
+            <Route path="/thanks">
+              <Thanks />
+            </Route>
+          </Switch>
+        </animated.div>
+      ))}
+    </Card>
   );
 };
 

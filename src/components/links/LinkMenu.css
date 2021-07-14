@@ -5,7 +5,7 @@
   display: flex;
   align-items: baseline;
   margin-left: auto;
-  justify-content: center;
+  justify-content: left;
 }
 
 .menuicon {
@@ -33,10 +33,16 @@
 
 .menubutton {
   margin: 1%;
-  width: 100px;
-  height: 100px;
+  width: 75px;
+  height: 75px;
 }
 
 a:hover {
   text-decoration: none;
+}
+
+@media (max-width: 1080px) {
+    .menu {
+        justify-content: center;
+    }
 }

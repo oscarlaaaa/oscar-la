@@ -22,7 +22,9 @@ const teamLinks = (team) => {
   return team.map((member) => {
     return (
       <li>
-        <a href={member.link}>{member.name}</a>
+        <a href={member.link} style={{ fontSize: "1.5rem" }}>
+          {member.name}
+        </a>
       </li>
     );
   });
@@ -34,6 +36,7 @@ const ProjectItem = ({ project }) => {
   const [showModal, setShowModal] = useState(false);
 
   const projectPic = (project) => {
+    let key = 0;
     return project.images.map((img) => {
       return (
         <div className="projimg">
@@ -45,6 +48,7 @@ const ProjectItem = ({ project }) => {
             }}
             src={img}
             alt="project screenshot"
+            key={key++}
           />
         </div>
       );
@@ -76,16 +80,25 @@ const ProjectItem = ({ project }) => {
         <i>{project.slogan}</i>
       </p>
       <div className="projectvisuals">
-      {project.videourl === null ? (
-        <img className="video mainimg" src={project.mainimg} alt="main project visual"/>
-      ) : (
-        <YoutubeEmbed className="video" embedId={project.videourl} />
-      )}
-      {project.images === null ? (
-        <p></p>
-      ) : (
-        <div className="projectimgs">{projectPic(project)}</div>
-      )}
+        {project.videourl === null ? (
+          <img
+            onClick={() => {
+              setShowModal(true);
+              setModalImg(project.mainimg);
+              setModalTitle(project.title);
+            }}
+            className="video mainimg"
+            src={project.mainimg}
+            alt="main project visual"
+          />
+        ) : (
+          <YoutubeEmbed className="video" embedId={project.videourl} />
+        )}
+        {project.images === null ? (
+          <p></p>
+        ) : (
+          <div className="projectimgs">{projectPic(project)}</div>
+        )}
       </div>
       <Modal
         show={showModal}
@@ -125,18 +138,23 @@ const ProjectItem = ({ project }) => {
         <p style={{ marginBottom: "0" }}>
           <span>Tech:</span> {project.technologies}
         </p>
-        {project.awards && <p><span>Awards: </span><ul>{projectAwards(project.awards)}</ul></p>}
+        {project.awards && (
+          <p>
+            <span>Awards: </span>
+            <ul>{projectAwards(project.awards)}</ul>
+          </p>
+        )}
         <p style={{ fontSize: "1.4rem", margin: "20px" }}>
           {project.description}
         </p>
-        <p style={{ marginBottom: "0" }}>
+        <div style={{ marginBottom: "0" }}>
           <span>Features:</span>
           <ul>{projectFeatures(project.features)}</ul>
-        </p>
-        <p style={{ marginBottom: "0" }}>
+        </div>
+        <div style={{ marginBottom: "0" }}>
           <span>Team Members:</span>
           <ul>{teamLinks(project.team)}</ul>
-        </p>
+        </div>
       </div>
     </div>
   );
