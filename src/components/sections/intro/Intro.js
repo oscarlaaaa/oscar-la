@@ -6,7 +6,7 @@ import './Intro.css';
 const Intro = () => {
   return (
     <div>
-      <div id="introsect">
+      <div id="introsect" style={{marginTop: "10%"}}>
         <h1 id="hometitle">hi, i'm oscar</h1>{" "}
         <AnimatedText />
       </div>
