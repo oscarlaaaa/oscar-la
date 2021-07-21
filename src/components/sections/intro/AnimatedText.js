@@ -33,6 +33,8 @@ const AnimatedText = () => {
             <Typist.Backspace count={30} delay={5000} />
             <h3 className="descriptors">boardgame enthusiast</h3>
             <Typist.Backspace count={30} delay={5000} />
+            <h3 className="descriptors">PROGRAMMING LEGEND</h3>
+            <Typist.Backspace count={30} delay={0} />
           </Typist>
         ) : (
           <div style={{ height: "100%" }}></div>
