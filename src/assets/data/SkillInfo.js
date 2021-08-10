@@ -6,6 +6,7 @@ const proficiencies = [
   { name: "C#", icon: "https://i.imgur.com/xwJ6Qvm.png",  type: "language", comfort: 1 },
   { name: "SQL", icon: "https://i.imgur.com/SPaHNHC.png",  type: "language", comfort: 2 },
   { name: "Ruby", icon: "https://i.imgur.com/IAL30vU.png",  type: "language", comfort: 1 },
+  { name: "Python", icon: "https://i.imgur.com/y3BsWEq.png", type: "language", comfort: 1 },
 
   
   { name: "React.js", icon: "https://i.imgur.com/tNQCFxZ.png",  type: "framework/engine", comfort: 3 },

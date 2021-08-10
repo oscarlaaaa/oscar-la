@@ -1,5 +1,25 @@
 const projects = [
   {
+    title: "Drive Badminton Centre Info System",
+    type: "Web Application/Enterprise",
+    categories: ["web", "full-stack", "enterprise"],
+    timeframe: "Current (1 month)",
+    slogan:
+      "this combines the two things i love: badminton, and not having to read bad handwriting.",
+    technologies: "RubyOnRails, React.js, PostgreSQL",
+    videourl: null,
+    mainimg: "https://dummyimage.com/600x400/000/fff",
+    images: [],
+    team: [{ name: "Vivian Wu", link: "https://github.com/vvnwu" }],
+    description:
+      'Formed from our love for badminton and a burning sense of "I could make something better than that", we have pitched a badminton information system that integrates all relevant business factors including stringing, court bookings, lessons, and more! My first paid programming job B)',
+    features: [
+      "Researched, formulated, and pitched an integrated information system to solve business deficiencies.",
+      "Outlined roadmap, cost estimates, and possible features with the feedback of the business owner.",
+      "Currently learning RubyOnRails and structuring app features, layout, and code structure."
+    ],
+  },
+  {
     title: "ScoutNinja",
     type: "Mobile Web Application/Game",
     categories: ["web", "game", "full-stack", "mobile"],
@@ -137,22 +157,6 @@ const projects = [
       "Location review, commenting, and rating system.",
       "Responsive layout that accomodates both mobile and web views.",
     ],
-  },
-  {
-    title: "Badminton Information System",
-    type: "Web Application/Enterprise",
-    categories: ["web", "full-stack", "enterprise"],
-    timeframe: "Current (5 months)",
-    slogan:
-      "this combines the two things i love: badminton, and not having to read bad handwriting.",
-    technologies: "RubyOnRails, Vue.js, AWS Aurora",
-    videourl: null,
-    mainimg: "https://dummyimage.com/600x400/000/fff",
-    images: [],
-    team: [{ name: "Vivian Wu", link: "https://github.com/vvnwu" }],
-    description:
-      'Formed from our love for badminton and a burning sense of "I could make something better than that", we have decided to build a badminton information system that integrates all relevant business factors including stringing, court bookings, lessons, and more!',
-    features: ["Currently in progress; nothing to show for now :("],
   },
 ];
 
