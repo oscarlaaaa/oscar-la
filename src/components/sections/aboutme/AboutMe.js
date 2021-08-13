@@ -14,7 +14,9 @@ const AboutMe = () => {
           Biology, and moved to British Columbia, Canada for my post-secondary
           education. Presently, I have graduated with a Bachelors degree from
           UBC and am currently taking the diploma of Computer Systems Technology
-          with an estimated graduation date of June, 2023.
+          at the British Columbia Institute of Technology with an estimated
+          graduation date of June, 2023. I also have dual-citizenship: Canadian
+          and American.
         </p>
       </div>
       <br />
@@ -32,8 +34,8 @@ const AboutMe = () => {
           solve problems in creative ways AND get paid for it? I was immediately
           hooked, and knew that this is what I wanted to do for the rest of my
           life. With the encouragement of friends and family, I took a short
-          break after graduating from UBC and applied for the CST program
-          at BCIT, which is where I am today.
+          break after graduating from UBC and applied for the CST program at
+          BCIT, which is where I am today.
         </p>
       </div>
       <br />
@@ -46,10 +48,9 @@ const AboutMe = () => {
         </p>
         <p>
           I am someone that thrives off of constantly being challenged and
-          guided, and as such I am only looking for jobs that provide a good
-          amount of mentorship and review, as well as allowing for some level of
-          creative interpretation when it comes to problem-solving and/or
-          development.
+          guided, and as such I am looking for jobs that provide a good
+          amount of mentorship and review, as well as a high level of
+          creative interpretation, problem-solving, and opportunity to contribute meaningful code.
         </p>
       </div>
       <br />
