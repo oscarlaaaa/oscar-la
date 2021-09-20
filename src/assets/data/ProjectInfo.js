@@ -1,9 +1,39 @@
 const projects = [
   {
+    title: "Cats In Space!",
+    type: "Game",
+    categories: ["game"],
+    timeframe: "3 days",
+    slogan:
+      "Join forces with the Catmmando army and protect your space fortress!",
+    technologies: "Unity, C#",
+    videourl: null,
+    mainimg: "https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/660/380/datas/original.png",
+    images: 
+    [
+"https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/660/394/datas/original.png",
+"https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/660/407/datas/original.png",
+"https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/665/195/datas/original.jpg"
+    ],
+    team: [
+        { name: "Sally Poon", link: "https://github.com/sallyklpoon" },
+        { name: "Raymond Wong", link: ""},
+        { name: "Nolan Nordwall", link: ""}
+    ],
+    description:
+      "Have you ever wondered what happens when you send a cat into space? You get a tower-defense game! Space Cats is a 2D tower-defense game built for Hack The North 2021, we misinterpreted the judging section and ended up going for a space theme. Nonetheless, this project has allowed us to foray into the intricacies of game design and the Unity game engine.",
+    features: [
+      "Randomized map generation - different playthrough every run!",
+      "Working player health and money system",
+      "Space cats that shoot airplanes!!",
+      "Upbeat and exciting sound design"
+    ],
+  },
+  {
     title: "Drive Badminton Centre Info System",
     type: "Web Application/Enterprise",
     categories: ["web", "full-stack", "enterprise"],
-    timeframe: "Current (1 month)",
+    timeframe: "Current (3 months)",
     slogan:
       "this combines the two things i love: badminton, and not having to read bad handwriting.",
     technologies: "RubyOnRails, React.js, PostgreSQL",
@@ -16,7 +46,7 @@ const projects = [
     features: [
       "Researched, formulated, and pitched an integrated information system to solve business deficiencies.",
       "Outlined roadmap, cost estimates, and possible features with the feedback of the business owner.",
-      "Currently learning RubyOnRails and structuring app features, layout, and code structure."
+      "Currently learning RubyOnRails and structuring app features, layout, and code structure.",
     ],
   },
   {
