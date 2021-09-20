@@ -7,6 +7,8 @@ const projects = [
     slogan:
       "Join forces with the Catmmando army and protect your space fortress!",
     technologies: "Unity, C#",
+    devpost: "https://devpost.com/software/cosmic-fortress",
+    link: "https://play.unity.com/mg/other/cats-in-space",
     videourl: null,
     mainimg: "https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/660/380/datas/original.png",
     images: 
