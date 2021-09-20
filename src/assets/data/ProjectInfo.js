@@ -17,8 +17,8 @@ const projects = [
     ],
     team: [
         { name: "Sally Poon", link: "https://github.com/sallyklpoon" },
-        { name: "Raymond Wong", link: ""},
-        { name: "Nolan Nordwall", link: ""}
+        { name: "Raymond Wong", link: "https://github.com/ray165"},
+        { name: "Nolan Nordwall", link: "https://github.com/Nosewall"}
     ],
     description:
       "Have you ever wondered what happens when you send a cat into space? You get a tower-defense game! Space Cats is a 2D tower-defense game built for Hack The North 2021, we misinterpreted the judging section and ended up going for a space theme. Nonetheless, this project has allowed us to foray into the intricacies of game design and the Unity game engine.",
