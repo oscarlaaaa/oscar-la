@@ -35,7 +35,7 @@ const projects = [
     title: "Drive Badminton Centre Info System",
     type: "Web Application/Enterprise",
     categories: ["web", "full-stack", "enterprise"],
-    timeframe: "Current (3 months)",
+    timeframe: "Current (8 months)",
     slogan:
       "this combines the two things i love: badminton, and not having to read bad handwriting.",
     technologies: "RubyOnRails, React.js, PostgreSQL",

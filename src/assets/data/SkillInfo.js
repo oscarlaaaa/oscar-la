@@ -5,7 +5,7 @@ const proficiencies = [
   { name: "Javascript", icon: "https://i.imgur.com/C8t2E5k.png",  type: "language", comfort: 3 },
   { name: "C#", icon: "https://i.imgur.com/xwJ6Qvm.png",  type: "language", comfort: 1 },
   { name: "SQL", icon: "https://i.imgur.com/SPaHNHC.png",  type: "language", comfort: 2 },
-  { name: "Ruby", icon: "https://i.imgur.com/IAL30vU.png",  type: "language", comfort: 1 },
+  { name: "Ruby", icon: "https://i.imgur.com/IAL30vU.png",  type: "language", comfort: 2 },
   { name: "Python", icon: "https://i.imgur.com/y3BsWEq.png?1", type: "language", comfort: 1 },
   
 
@@ -18,13 +18,13 @@ const proficiencies = [
   { name: "Vue.js", icon: "https://i.imgur.com/QNuAZzb.png",  type: "framework/engine", comfort: 1 },
   { name: "Selenium IDE", icon: "https://i.imgur.com/6NrQqod.png",  type: "framework/engine", comfort: 1 },
   { name: "Unity", icon: "https://i.imgur.com/4HU8Pew.png",  type: "framework/engine", comfort: 1 },
-  { name: "RubyOnRails", icon: "https://i.imgur.com/0iSbKRS.png",  type: "framework/engine", comfort: 1 },
+  { name: "RubyOnRails", icon: "https://i.imgur.com/0iSbKRS.png",  type: "framework/engine", comfort: 2 },
   { name: "Node.js", icon: "https://i.imgur.com/IfGwZal.png", type: "framework/engine", comfort: 3 },
   { name: "Express.js", icon: "https://i.imgur.com/IfGwZal.png", type: "framework/engine", comfort: 3 },
 
   
   { name: "PostgreSQL", icon: "https://i.imgur.com/XrAjylL.png",  type: "server/db", comfort: 1 },
-  { name: "MySQL", icon: "https://i.imgur.com/7P9OyM0.png",  type: "server/db", comfort: 1 },
+  { name: "MySQL", icon: "https://i.imgur.com/7P9OyM0.png",  type: "server/db", comfort: 2 },
   { name: "Google Firebase", icon: "https://i.imgur.com/p1o2pN3.png",  type: "server/db", comfort: 2 },
   { name: "Google Firestore", icon: "https://i.imgur.com/p1o2pN3.png",  type: "server/db", comfort: 2 },
   { name: "AWS Amplify", icon: "https://i.imgur.com/bZy2I43.png",  type: "server/db", comfort: 1 },
