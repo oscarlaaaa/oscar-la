@@ -1,5 +1,24 @@
 const projects = [
   {
+    title: "Badminton Tournament Results Predictor",
+    type: "Web Application/Machine Learning",
+    categories: ["web, ml"],
+    timeframe: "Current",
+    slogan:
+      "I know this person is going to win and I can prove it mathematically.",
+    technologies: "Python, MongoDB",
+    github: "https://github.com/oscarlaaaa/badminton-scraper",
+    videourl: null,
+    mainimg: "https://dummyimage.com/600x400/000/fff",
+    images: [],
+    team: [],
+    description:
+      "A web-scraper API that scrapes BWF Tournament data, feeds the data into various ML learning models, and assesses tournament draws by giving each player a % chance to win. Or, that's what it's supposed to do, at least.",
+    features: [
+      "Right now, it can scrape match data. That's pretty much it.",
+    ],
+  },
+  {
     title: "Cats In Space!",
     type: "Game",
     categories: ["game"],
@@ -10,17 +29,17 @@ const projects = [
     devpost: "https://devpost.com/software/cosmic-fortress",
     link: "https://play.unity.com/mg/other/cats-in-space",
     videourl: null,
-    mainimg: "https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/660/380/datas/original.png",
-    images: 
-    [
-"https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/660/394/datas/original.png",
-"https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/660/407/datas/original.png",
-"https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/665/195/datas/original.jpg"
+    mainimg:
+      "https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/660/380/datas/original.png",
+    images: [
+      "https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/660/394/datas/original.png",
+      "https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/660/407/datas/original.png",
+      "https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/665/195/datas/original.jpg",
     ],
     team: [
-        { name: "Sally Poon", link: "https://github.com/sallyklpoon" },
-        { name: "Raymond Wong", link: "https://github.com/ray165"},
-        { name: "Nolan Nordwall", link: "https://github.com/Nosewall"}
+      { name: "Sally Poon", link: "https://github.com/sallyklpoon" },
+      { name: "Raymond Wong", link: "https://github.com/ray165" },
+      { name: "Nolan Nordwall", link: "https://github.com/Nosewall" },
     ],
     description:
       "Have you ever wondered what happens when you send a cat into space? You get a tower-defense game! Space Cats is a 2D tower-defense game built for Hack The North 2021, we misinterpreted the judging section and ended up going for a space theme. Nonetheless, this project has allowed us to foray into the intricacies of game design and the Unity game engine.",
@@ -28,17 +47,17 @@ const projects = [
       "Randomized map generation - different playthrough every run!",
       "Working player health and money system",
       "Space cats that shoot airplanes!!",
-      "Upbeat and exciting sound design"
+      "Upbeat and exciting sound design",
     ],
   },
   {
     title: "Drive Badminton Centre Info System",
     type: "Web Application/Enterprise",
     categories: ["web", "full-stack", "enterprise"],
-    timeframe: "Current (8 months)",
+    timeframe: "9 months (axed :C)",
     slogan:
       "this combines the two things i love: badminton, and not having to read bad handwriting.",
-    technologies: "RubyOnRails, React.js, PostgreSQL",
+    technologies: "RubyOnRails, React.js, PostgreSQL, Electron.js",
     videourl: null,
     mainimg: "https://dummyimage.com/600x400/000/fff",
     images: [],
