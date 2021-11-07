@@ -79,6 +79,13 @@ const ProjectList = () => {
         <Button
           variant="outline-info"
           className="sortButt"
+          onClick={() => setSort("ml")}
+        >
+          Machine Learning
+        </Button>
+        <Button
+          variant="outline-info"
+          className="sortButt"
           onClick={() => setSort("misc")}
         >
           Other

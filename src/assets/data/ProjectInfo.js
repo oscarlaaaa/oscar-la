@@ -1,6 +1,6 @@
 const projects = [
   {
-    title: "Badminton Tournament Results Predictor",
+    title: "Badminton Predictive Analysis",
     type: "Web Application/Machine Learning",
     categories: ["web, ml"],
     timeframe: "Current",
@@ -15,7 +15,8 @@ const projects = [
     description:
       "A web-scraper API that scrapes BWF Tournament data, feeds the data into various ML learning models, and assesses tournament draws by giving each player a % chance to win. Or, that's what it's supposed to do, at least.",
     features: [
-      "Right now, it can scrape match data. That's pretty much it.",
+      "Parses and collects all relevant tournament links (above BWF World Tour 100 level between 2007 and 2021)",
+      "Scrapes and compiles all matches from tournament links for easy data access within 90 seconds (for ~500 tournaments)"
     ],
   },
   {
