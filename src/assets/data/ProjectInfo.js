@@ -15,8 +15,10 @@ const projects = [
     description:
       "A web-scraper API that scrapes BWF Tournament data, feeds the data into various ML learning models, and assesses tournament draws by giving each player a % chance to win. Or, that's what it's supposed to do, at least.",
     features: [
-      "Parses and collects all relevant tournament links (above BWF World Tour 100 level between 2007 and 2021)",
-      "Scrapes and compiles all matches from tournament links for easy data access within 90 seconds (for ~500 tournaments)"
+      "Parses and collects all relevant tournament links (above BWF World Tour 100 level between 2007 and 2021) for match scraping",
+      "Scrapes and compiles all matches and players from tournament links for data analysis and clean-up",
+      "Stores all parsed matches, players, and tournaments into multiple formatted .csv files (soon to be MySQL db)",
+      "Records time benchmarks to accurately identify biggest I/O bottlenecks throughout process",
     ],
   },
   {
