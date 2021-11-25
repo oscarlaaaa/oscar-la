@@ -9,8 +9,8 @@ const projects = [
     technologies: "Python, MongoDB",
     github: "https://github.com/oscarlaaaa/badminton-scraper",
     videourl: null,
-    mainimg: "https://dummyimage.com/600x400/000/fff",
-    images: [],
+    mainimg: "https://i.imgur.com/LKHFnKJ.png",
+    images: ["https://i.imgur.com/hKgrzfg.png", "https://i.imgur.com/hLpxcuf.png"],
     team: [],
     description:
       "A web-scraper API that scrapes BWF Tournament data, feeds the data into various ML learning models, and assesses tournament draws by giving each player a % chance to win. Or, that's what it's supposed to do, at least.",
