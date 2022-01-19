@@ -60,6 +60,13 @@ const courses = [
       "Computer Design; Modern Hardware and Architecture; CPU and I/O Devices;",
     outlineurl: "https://www.bcit.ca/outlines/20213034766/",
   },
+  {
+    title: "COMP3761",
+    subject: "Algorithm Analysis and Design",
+    description:
+      "Algorithm Design; Time and Space Analysis; Data Structures",
+    outlineurl: "https://www.bcit.ca/outlines/20221089793/",
+  },
 ];
 
 export default courses;
