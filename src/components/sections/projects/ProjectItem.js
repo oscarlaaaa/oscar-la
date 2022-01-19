@@ -7,19 +7,19 @@ import { ReactComponent as Globe } from "../../../assets/img/globe.svg";
 import { ReactComponent as Devpost } from "../../../assets/img/trophy-fill.svg";
 
 const projectFeatures = (feets) => {
-  return feets.map((feat) => {
+  return feets ? feets.map((feat) => {
     return <li style={{ fontSize: "1.4rem" }}>{feat}</li>;
-  });
+  }) : null;
 };
 
 const projectAwards = (awards) => {
-  return awards.map((award) => {
+  return awards ? awards.map((award) => {
     return <li>{award}</li>;
-  });
+  }) : null;
 };
 
 const teamLinks = (team) => {
-  return team.map((member) => {
+  return team ? team.map((member) => {
     return (
       <li>
         <a href={member.link} style={{ fontSize: "1.5rem" }}>
@@ -27,7 +27,7 @@ const teamLinks = (team) => {
         </a>
       </li>
     );
-  });
+  }) : null;
 };
 
 const ProjectItem = ({ project }) => {
