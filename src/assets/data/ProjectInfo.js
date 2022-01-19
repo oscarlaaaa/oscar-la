@@ -1,7 +1,7 @@
 const projects = [
   {
     title: "Badminton Singles API",
-    type: "Web Application",
+    type: "API",
     categories: ["web"],
     timeframe: "3 months",
     slogan:
@@ -76,7 +76,7 @@ const projects = [
   },
   {
     title: "ScoutNinja",
-    type: "Mobile Web Application/Game",
+    type: "Mobile Web Application/API/Game",
     categories: ["web", "game", "full-stack", "mobile"],
     timeframe: "6 weeks",
     slogan: "why go outside when you can go outside, inside?",
