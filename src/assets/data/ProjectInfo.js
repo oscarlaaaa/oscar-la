@@ -6,7 +6,7 @@ const projects = [
     timeframe: "3 months",
     slogan:
       "I got IP banned while making this project so I hope you appreciate it.",
-    technologies: "Python, AWS API Gateway, AWS Lambda, MySQL",
+    technologies: "Python, AWS API Gateway, AWS Lambda, Docker, MySQL",
     github: "https://github.com/oscarlaaaa/badminton-api",
     link: "https://badminton-api.com",
     videourl: null,
