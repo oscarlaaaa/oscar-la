@@ -35,6 +35,18 @@ const Thanks = () => {
           always showing an interest in the things I'm studying and doing.
         </li>
         <li>
+          <span className="thankName">Alejandro Javier Yu</span> for being a modern hero
+          and for always bringing good snax to hangouts
+        </li>
+        <li>
+          <span className="thankName">Becky Pumpkin</span> for tearing me a whole new
+          patoot during practice technical interviews just for fun
+        </li>
+        <li>
+          <span className="thankName">Cpl. Lionheart</span> for reasons so obvious
+          they go without saying
+        </li>
+        <li>
           <span className="thankName">My mother and sister</span> for supporting
           me no matter what I do.
         </li>
